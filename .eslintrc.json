@@ -1,5 +1,10 @@
 {
   "extends": "airbnb-base",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
   "env": {
      "es6": true,
      "browser": true,
@@ -10,6 +15,10 @@
       "error",
       "LabeledStatement",
       "WithStatement"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error", 
+      { "devDependencies": true }
     ]
   }
 }
